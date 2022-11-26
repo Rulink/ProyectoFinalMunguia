@@ -1,0 +1,2054 @@
+@charset "UTF-8";
+@font-face {
+  font-family: hero;
+  src: url(/assets/fonts/hiJack.ttf);
+}
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.fondo {
+  background-color: #004280 !important;
+}
+
+.blanco {
+  color: white !important;
+}
+
+.texto {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+}
+
+.row {
+  justify-content: space-between;
+  margin-right: 0% !important;
+}
+
+.invertir {
+  filter: invert(1);
+}
+
+.hero {
+  font-family: hero;
+}
+
+.bigText {
+  font-size: 5vw !important;
+  text-align: center;
+}
+
+.subtitulo {
+  font-family: hero !important;
+  padding: 2rem 0;
+  font-size: 7vw;
+  color: #004280;
+}
+
+/****************** COMPUTADORAS Y LAPTOPS GRANDES********************/
+@media (min-width: 1280px) {
+  header {
+    max-width: 100vw;
+  }
+  header nav {
+    padding: 0 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: solid white 5px;
+  }
+  .topPage {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+  }
+  .topPage__button {
+    display: none;
+  }
+  .navbar {
+    padding: 0 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .topPage__Up {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    align-items: center;
+    justify-content: space-between;
+  }
+  .topPage__Down {
+    grid-row: 2/3;
+    display: grid !important;
+    grid-template-columns: 1fr;
+  }
+  .brand {
+    grid-column: 1/4;
+    display: block;
+  }
+  .search {
+    padding-right: 1%;
+    grid-column: 4/10;
+    justify-self: center;
+    width: 90%;
+  }
+  .search button {
+    align-self: center;
+  }
+  #carouselExampleCaptions {
+    background-color: #004280;
+    display: flex;
+    justify-content: center;
+  }
+  .carousel-inner {
+    width: 70%;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 5%;
+  }
+  .z2 {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    opacity: 50%;
+    width: 100vw;
+    height: 15vh;
+  }
+  .z1 {
+    position: relative;
+    z-index: 2;
+  }
+  #logo {
+    width: 18%;
+    padding-left: 2%;
+  }
+  #heroGames {
+    width: 70%;
+  }
+  #navbarNavDropdown {
+    margin-top: 1%;
+    border-top: solid white 5px;
+    display: grid !important;
+    align-items: stretch;
+  }
+  .otrosLinks {
+    grid-area: otro;
+    display: flex;
+  }
+  .otrosLinks__lista {
+    position: absolute;
+    top: 0%;
+    right: 0cm;
+  }
+  .otrosLinks__elemento {
+    display: inline-block;
+    font-style: italic;
+    font-size: 17px;
+    color: white;
+    padding: 0px 8px;
+  }
+  .seccion {
+    display: grid !important;
+    font-size: 30px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .nav__element {
+    display: flex;
+    transition: 0.3s;
+    justify-content: center;
+    color: #fff !important;
+    text-align: center;
+    font-size: 1.5vw;
+  }
+  .nav__element:hover {
+    background-color: #fff;
+    color: #004280 !important;
+  }
+  .novedades {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #004280;
+    justify-items: center;
+    align-items: center;
+  }
+  .novedades__flecha {
+    filter: invert(1);
+    width: 50%;
+    transition: all 150ms;
+  }
+  .novedades__flecha:hover {
+    filter: invert(1);
+    width: 80%;
+  }
+  .anterior {
+    grid-column: 1/2;
+  }
+  .siguiente {
+    grid-column: 7/8;
+  }
+  .novedades__imagenes {
+    /*background-color: aquamarine;*/
+    background-position: top;
+    background-attachment: scroll;
+    background-size: cover;
+    color: white;
+    width: 100%;
+  }
+  .novedades--animacion {
+    -webkit-animation-name: crecer;
+            animation-name: crecer;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes crecer {
+    0% {
+      transform: scale(0);
+    }
+    70% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  @keyframes crecer {
+    0% {
+      transform: scale(0);
+    }
+    70% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  .novedades--derecha {
+    -webkit-animation-name: derecha;
+            animation-name: derecha;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes derecha {
+    0% {
+      transform: translate(-5%);
+    }
+    50% {
+      transform: translate(5%);
+    }
+    100% {
+      transform: translate(-5%);
+    }
+  }
+  @keyframes derecha {
+    0% {
+      transform: translate(-5%);
+    }
+    50% {
+      transform: translate(5%);
+    }
+    100% {
+      transform: translate(-5%);
+    }
+  }
+  .novedades--izquierda {
+    -webkit-animation-name: izquierda;
+            animation-name: izquierda;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes izquierda {
+    0% {
+      transform: translate(5%) rotate(180deg);
+    }
+    50% {
+      transform: translate(-5%) rotate(180deg);
+    }
+    100% {
+      transform: translate(5%) rotate(180deg);
+    }
+  }
+  @keyframes izquierda {
+    0% {
+      transform: translate(5%) rotate(180deg);
+    }
+    50% {
+      transform: translate(-5%) rotate(180deg);
+    }
+    100% {
+      transform: translate(5%) rotate(180deg);
+    }
+  }
+  .novedades__producto {
+    max-width: 100%;
+    border-radius: 25px;
+    grid-column: 2/7;
+  }
+  section.container {
+    margin: 0 0 0 0 !important;
+    border: 0 0 0 0 !important;
+    max-width: 100vw;
+    justify-content: space-evenly;
+  }
+  div.container {
+    margin: 0 0 0 0 !important;
+    border: 0 0 0 0 !important;
+    max-width: 100vw;
+    justify-content: space-evenly;
+  }
+  .destacados {
+    padding: 1% 0 2% 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  }
+  .destacados__titulo {
+    padding-bottom: 0%;
+    font-size: 3rem;
+    text-align: center;
+    color: #004280;
+  }
+  .destacados section div {
+    border-radius: 5%;
+    transition: all 150ms;
+  }
+  .destacados section div:hover {
+    box-shadow: 20px 20px 15px grey;
+  }
+  .destacados section div p {
+    font-style: italic;
+    font-size: xx-large;
+    padding: 0px 0px 0px 0px;
+    font-weight: bold;
+    text-shadow: black;
+  }
+  .destacados__producto {
+    height: 200px;
+    margin: 15% 0 5% 0;
+  }
+  footer {
+    transition: all 150ms;
+    width: 100%;
+    color: white;
+    padding: 20px 20px;
+    background-color: #004280;
+    font-style: italic;
+    text-transform: uppercase;
+    bottom: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  footer a {
+    padding: 0% 1%;
+  }
+  footer img {
+    height: 5vh;
+    margin-top: 50%;
+  }
+  footer img:hover {
+    border: solid #fff;
+    border-radius: 90px;
+  }
+  footer .btn {
+    width: 20% !important;
+  }
+  footer .btn:hover {
+    color: #004280;
+  }
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+  }
+  .producto {
+    position: relative;
+    display: grid;
+    grid-template-rows: 15% 70% 15%;
+    height: 85vh;
+  }
+  .videojuegos {
+    background-image: url("/assets/backgrouond/juegos/xbox.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .tcg {
+    background-image: url("/assets/backgrouond/white_and_black_halftone_background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .producto__marcas {
+    grid-row: 2/3;
+    display: grid;
+    align-self: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  .n1 {
+    grid-column: 1/2;
+    align-self: center;
+  }
+  .n2 {
+    grid-column: 2/3;
+    align-self: center;
+  }
+  .n3 {
+    grid-column: 3/4;
+    align-self: center;
+  }
+  .producto__logo {
+    width: 85%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 50px;
+    transition: all 100ms;
+  }
+  .producto__logo:hover {
+    width: 98%;
+  }
+  .banner2 {
+    width: 100%;
+    height: 835px;
+    background-image: url("/assets/backgrouond/juegos/play.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    font-family: "roboto";
+    color: white;
+    font-weight: bold;
+    display: grid;
+    align-content: center;
+    text-align: center;
+  }
+  .tarjeta {
+    width: 22%;
+    margin: 1% 0;
+    border-radius: 5%;
+    transition: all 150ms;
+    text-align: center;
+  }
+  .tarjeta:hover {
+    box-shadow: 20px 20px 15px grey;
+  }
+  .tarjeta img {
+    width: 90%;
+    margin: 5% 0;
+  }
+  .tarjeta h3 {
+    font-size: 1.2rem;
+  }
+  .tarjeta p {
+    font-style: italic;
+    font-size: xx-large;
+    padding: 0px 0px 0px 0px;
+    font-weight: bold;
+    text-shadow: black;
+  }
+  .filtros {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5% 0% 0% 5%;
+    border-right: 2px solid rgba(0, 0, 0, 0.4);
+  }
+  .filtros h4 {
+    font-size: 1.8rem;
+    margin-bottom: 0%;
+  }
+  .filtros h5 {
+    padding-left: 3%;
+    margin: 4% 0;
+  }
+  .filtros button {
+    margin-top: 5%;
+    width: 50%;
+  }
+  input {
+    margin: 3% 3% 3% 0%;
+  }
+  .malla_productos {
+    padding-bottom: 2%;
+    padding-right: 0% !important;
+  }
+  .col-form-label {
+    color: #000;
+    font-size: 13px;
+  }
+  .btn1, .form-control, .custom-select {
+    height: 45px;
+  }
+  .custom-select:active, .custom-select:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #000;
+  }
+  .contact-wrap {
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+  .contact-wrap .col-form-label {
+    font-size: 14px;
+    color: black;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    padding: 0;
+  }
+  .contact-wrap .form, .contact-wrap .contact-info {
+    padding: 40px;
+  }
+  .contact-wrap .contact-info {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .contact-wrap .contact-info ul li {
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .contact-wrap .contact-info ul li .wrap-icon {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 5px;
+  }
+  .contact-wrap .form {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .contact-wrap .form h3 {
+    color: #35477d;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .contact-wrap .contact-info {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+  .contact-wrap .contact-info h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  label.error {
+    font-size: 12px;
+    color: red;
+  }
+  #message {
+    resize: vertical;
+  }
+  #form-message-warning, #form-message-success {
+    display: none;
+  }
+  #form-message-warning {
+    color: #B90B0B;
+  }
+  #form-message-success {
+    color: #55A44E;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .submitting {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000;
+  }
+  .fondo1 {
+    background-image: url("/assets/backgrouond/juegos/xbox.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .contacto__botones {
+    display: flex;
+    justify-content: right;
+  }
+  .contacto__botones button {
+    margin-right: 5%;
+  }
+}
+/************ COMPUTADORAS PEQUEÑAS *************************/
+@media (max-width: 1279px) and (min-width: 992px) {
+  header {
+    max-width: 100vw;
+  }
+  header nav {
+    padding: 0 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: solid white 5px;
+  }
+  .topPage {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+  }
+  .topPage__button {
+    display: none;
+  }
+  .navbar {
+    padding: 0 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .topPage__Up {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    align-items: center;
+    justify-content: space-between;
+  }
+  .topPage__Down {
+    grid-row: 2/3;
+    display: grid !important;
+    grid-template-columns: 1fr;
+  }
+  .brand {
+    grid-column: 1/4;
+    display: block;
+  }
+  .search {
+    padding-right: 1%;
+    grid-column: 4/10;
+    justify-self: center;
+    width: 90%;
+  }
+  .search button {
+    align-self: center;
+  }
+  #carouselExampleCaptions {
+    background-color: #004280;
+    display: flex;
+    justify-content: center;
+  }
+  .carousel-inner {
+    width: 70%;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 5%;
+  }
+  .z2 {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    opacity: 50%;
+    width: 100vw;
+    height: 15vh;
+  }
+  .z1 {
+    position: relative;
+    z-index: 2;
+  }
+  #logo {
+    width: 18%;
+    padding-left: 2%;
+  }
+  #heroGames {
+    width: 70%;
+  }
+  #navbarNavDropdown {
+    margin-top: 1%;
+    border-top: solid white 5px;
+    display: grid !important;
+    align-items: stretch;
+  }
+  .otrosLinks {
+    grid-area: otro;
+    display: flex;
+  }
+  .otrosLinks__lista {
+    position: absolute;
+    top: 0%;
+    right: 0cm;
+  }
+  .otrosLinks__elemento {
+    display: inline-block;
+    font-style: italic;
+    font-size: 17px;
+    color: white;
+    padding: 0px 8px;
+  }
+  .seccion {
+    display: grid !important;
+    font-size: 30px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .nav__element {
+    display: flex;
+    transition: 0.3s;
+    justify-content: center;
+    color: #fff !important;
+    text-align: center;
+    font-size: 1.5vw;
+  }
+  .nav__element:hover {
+    background-color: #fff;
+    color: #004280 !important;
+  }
+  .novedades {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #004280;
+    justify-items: center;
+    align-items: center;
+  }
+  .novedades__flecha {
+    filter: invert(1);
+    width: 50%;
+    transition: all 150ms;
+  }
+  .novedades__flecha:hover {
+    filter: invert(1);
+    width: 80%;
+  }
+  .anterior {
+    grid-column: 1/2;
+  }
+  .siguiente {
+    grid-column: 7/8;
+  }
+  .novedades__imagenes {
+    /*background-color: aquamarine;*/
+    background-position: top;
+    background-attachment: scroll;
+    background-size: cover;
+    color: white;
+    width: 100%;
+  }
+  .novedades--animacion {
+    -webkit-animation-name: crecer;
+            animation-name: crecer;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes crecer {
+    0% {
+      transform: scale(0);
+    }
+    70% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  @keyframes crecer {
+    0% {
+      transform: scale(0);
+    }
+    70% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  .novedades--derecha {
+    -webkit-animation-name: derecha;
+            animation-name: derecha;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes derecha {
+    0% {
+      transform: translate(-5%);
+    }
+    50% {
+      transform: translate(5%);
+    }
+    100% {
+      transform: translate(-5%);
+    }
+  }
+  @keyframes derecha {
+    0% {
+      transform: translate(-5%);
+    }
+    50% {
+      transform: translate(5%);
+    }
+    100% {
+      transform: translate(-5%);
+    }
+  }
+  .novedades--izquierda {
+    -webkit-animation-name: izquierda;
+            animation-name: izquierda;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes izquierda {
+    0% {
+      transform: translate(5%) rotate(180deg);
+    }
+    50% {
+      transform: translate(-5%) rotate(180deg);
+    }
+    100% {
+      transform: translate(5%) rotate(180deg);
+    }
+  }
+  @keyframes izquierda {
+    0% {
+      transform: translate(5%) rotate(180deg);
+    }
+    50% {
+      transform: translate(-5%) rotate(180deg);
+    }
+    100% {
+      transform: translate(5%) rotate(180deg);
+    }
+  }
+  .novedades__producto {
+    max-width: 100%;
+    border-radius: 25px;
+    grid-column: 2/7;
+  }
+  section.container {
+    margin: 0 0 0 0 !important;
+    border: 0 0 0 0 !important;
+    max-width: 100vw;
+    justify-content: space-evenly;
+  }
+  div.container {
+    margin: 0 0 0 0 !important;
+    border: 0 0 0 0 !important;
+    max-width: 100vw;
+    justify-content: space-evenly;
+  }
+  .destacados {
+    padding: 1% 0 2% 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  }
+  .destacados__titulo {
+    padding-bottom: 0%;
+    font-size: 3rem;
+    text-align: center;
+    color: #004280;
+  }
+  .destacados section div {
+    border-radius: 5%;
+    transition: all 150ms;
+  }
+  .destacados section div:hover {
+    box-shadow: 20px 20px 15px grey;
+  }
+  .destacados section div p {
+    font-style: italic;
+    font-size: xx-large;
+    padding: 0px 0px 0px 0px;
+    font-weight: bold;
+    text-shadow: black;
+  }
+  .destacados__producto {
+    height: 200px;
+    margin: 15% 0 5% 0;
+  }
+  footer {
+    transition: all 150ms;
+    width: 100%;
+    color: white;
+    padding: 20px 20px;
+    background-color: #004280;
+    font-style: italic;
+    text-transform: uppercase;
+    bottom: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  footer a {
+    padding: 0% 1%;
+  }
+  footer img {
+    height: 5vh;
+    margin-top: 50%;
+  }
+  footer img:hover {
+    border: solid #fff;
+    border-radius: 90px;
+  }
+  footer .btn {
+    width: 20% !important;
+  }
+  footer .btn:hover {
+    color: #004280;
+  }
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+  }
+  .producto {
+    position: relative;
+    display: grid;
+    grid-template-rows: 15% 70% 15%;
+    height: 85vh;
+  }
+  .videojuegos {
+    background-image: url("/assets/backgrouond/juegos/xbox.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .tcg {
+    background-image: url("/assets/backgrouond/white_and_black_halftone_background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .producto__marcas {
+    grid-row: 2/3;
+    display: grid;
+    align-self: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  .n1 {
+    grid-column: 1/2;
+    align-self: center;
+  }
+  .n2 {
+    grid-column: 2/3;
+    align-self: center;
+  }
+  .n3 {
+    grid-column: 3/4;
+    align-self: center;
+  }
+  .producto__logo {
+    width: 85%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 50px;
+    transition: all 100ms;
+  }
+  .producto__logo:hover {
+    width: 98%;
+  }
+  .banner2 {
+    width: 100%;
+    height: 835px;
+    background-image: url("/assets/backgrouond/juegos/play.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    font-family: "roboto";
+    color: white;
+    font-weight: bold;
+    display: grid;
+    align-content: center;
+    text-align: center;
+  }
+  .tarjeta {
+    width: 22%;
+    margin: 1% 0;
+    border-radius: 5%;
+    transition: all 150ms;
+    text-align: center;
+  }
+  .tarjeta:hover {
+    box-shadow: 20px 20px 15px grey;
+  }
+  .tarjeta img {
+    width: 90%;
+    margin: 5% 0;
+  }
+  .tarjeta h3 {
+    font-size: 1.2rem;
+  }
+  .tarjeta p {
+    font-style: italic;
+    font-size: xx-large;
+    padding: 0px 0px 0px 0px;
+    font-weight: bold;
+    text-shadow: black;
+  }
+  .filtros {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5% 0% 0% 5%;
+    border-right: 2px solid rgba(0, 0, 0, 0.4);
+  }
+  .filtros h4 {
+    font-size: 1.8rem;
+    margin-bottom: 0%;
+  }
+  .filtros h5 {
+    padding-left: 3%;
+    margin: 4% 0;
+  }
+  .filtros button {
+    margin-top: 5%;
+    width: 50%;
+  }
+  input {
+    margin: 3% 3% 3% 0%;
+  }
+  .malla_productos {
+    padding-bottom: 2%;
+    padding-right: 0% !important;
+  }
+  .col-form-label {
+    color: #000;
+    font-size: 13px;
+  }
+  .btn1, .form-control, .custom-select {
+    height: 45px;
+  }
+  .custom-select:active, .custom-select:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #000;
+  }
+  .contact-wrap {
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+  .contact-wrap .col-form-label {
+    font-size: 14px;
+    color: black;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    padding: 0;
+  }
+  .contact-wrap .form, .contact-wrap .contact-info {
+    padding: 40px;
+  }
+  .contact-wrap .contact-info {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .contact-wrap .contact-info ul li {
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .contact-wrap .contact-info ul li .wrap-icon {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 5px;
+  }
+  .contact-wrap .form {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .contact-wrap .form h3 {
+    color: #35477d;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .contact-wrap .contact-info {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+  .contact-wrap .contact-info h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  label.error {
+    font-size: 12px;
+    color: red;
+  }
+  #message {
+    resize: vertical;
+  }
+  #form-message-warning, #form-message-success {
+    display: none;
+  }
+  #form-message-warning {
+    color: #B90B0B;
+  }
+  #form-message-success {
+    color: #55A44E;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .submitting {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000;
+  }
+  .fondo1 {
+    background-image: url("/assets/backgrouond/juegos/xbox.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .contacto__botones {
+    display: flex;
+    justify-content: right;
+  }
+  .contacto__botones button {
+    margin-right: 5%;
+  }
+}
+/************ TABLETS GRANDES *************************/
+@media (max-width: 991px) and (min-width: 768px) {
+  .menu__texto {
+    font-size: 3vw;
+    text-align: center;
+    border-bottom: solid gainsboro 1px;
+    padding-top: 5px;
+  }
+  .menu__borde {
+    border-bottom: solid gainsboro 3px;
+  }
+  nav {
+    border-top: solid white 5px;
+    border-bottom: solid white 5px;
+    border-left: 0ch !important;
+    border-right: 0ch !important;
+    margin: 0 0;
+  }
+  .topPage {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .topPage__button {
+    display: flex;
+    justify-content: center;
+  }
+  .brand {
+    display: flex;
+    justify-content: center;
+  }
+  .sm-blanco {
+    color: white;
+  }
+  .search {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    justify-items: center !important;
+    align-items: center;
+    width: 95vw;
+  }
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .col-form-label {
+    color: #000;
+    font-size: 13px;
+  }
+  .btn1, .form-control, .custom-select {
+    height: 45px;
+  }
+  .custom-select:active, .custom-select:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #000;
+  }
+  .contact-wrap {
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+  .contact-wrap .col-form-label {
+    font-size: 14px;
+    color: black;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    padding: 0;
+  }
+  .contact-wrap .form, .contact-wrap .contact-info {
+    padding: 40px;
+  }
+  .contact-wrap .contact-info {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .contact-wrap .contact-info ul li {
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .contact-wrap .contact-info ul li .wrap-icon {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 5px;
+  }
+  .contact-wrap .form {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .contact-wrap .form h3 {
+    color: #35477d;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .contact-wrap .contact-info {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+  .contact-wrap .contact-info h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  label.error {
+    font-size: 12px;
+    color: red;
+  }
+  #message {
+    resize: vertical;
+  }
+  #form-message-warning, #form-message-success {
+    display: none;
+  }
+  #form-message-warning {
+    color: #B90B0B;
+  }
+  #form-message-success {
+    color: #55A44E;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .submitting {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000;
+  }
+  .z2 {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    opacity: 50%;
+    width: 100vw;
+    height: 15vh;
+  }
+  .z1 {
+    position: relative;
+    z-index: 2;
+  }
+  #logo {
+    width: 7vw;
+    padding-top: 1%;
+  }
+  #heroGames {
+    width: 50vw;
+    padding-top: 1%;
+  }
+  .otrosLinks {
+    display: none;
+  }
+  .otrosLinks__lista {
+    display: none;
+  }
+  .otrosLinks__elemento {
+    display: none;
+  }
+  .novedades {
+    display: flex;
+    background-color: #004280;
+    justify-content: center;
+  }
+  .anterior {
+    display: none;
+  }
+  .siguiente {
+    display: none;
+  }
+  .novedades__producto {
+    width: 100vw;
+    border-radius: 0%;
+  }
+  section.container {
+    margin: 0 0 0 0 !important;
+    border: 0 0 0 0 !important;
+    max-width: 100vw;
+    justify-content: space-evenly;
+  }
+  div.container {
+    margin: 0 0 0 0 !important;
+    border: 0 0 0 0 !important;
+    max-width: 100vw;
+    justify-content: space-evenly;
+  }
+  .destacados {
+    padding: 1% 0 2% 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  }
+  .destacados__titulo {
+    font-style: italic;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #004280;
+  }
+  .destacados__producto {
+    height: 200px;
+  }
+  .videojuegos {
+    background-image: url("/assets/backgrouond/juegos/xbox.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .tcg {
+    background-image: url("/assets/backgrouond/white_and_black_halftone_background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .producto__marcas {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: space-around;
+  }
+  .producto__logo {
+    width: 100vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .tarjeta__producto p {
+    font-style: italic;
+    font-size: xx-large;
+    padding: 0px 0px 0px 0px;
+    font-weight: bold;
+    text-shadow: black;
+  }
+  .banner2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/assets/backgrouond/juegos/play.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    display: grid;
+    align-content: center;
+    text-align: center;
+  }
+  .banner2 h1 {
+    font-size: 40px;
+  }
+  footer {
+    transition: all 150ms;
+    width: 100%;
+    color: white;
+    padding: 20px 20px;
+    background-color: #004280;
+    font-style: italic;
+    text-transform: uppercase;
+    bottom: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  footer img {
+    padding: 0 1%;
+    height: 5vh;
+    margin-top: 50%;
+  }
+  footer img:hover {
+    border: solid #fff;
+    border-radius: 90px;
+  }
+  footer .btn {
+    width: 50VW !important;
+  }
+  footer .btn:hover {
+    color: #004280;
+  }
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+  }
+  .filtros {
+    display: none;
+    visibility: hidden;
+  }
+  .filtros * {
+    display: none !important;
+    visibility: hidden;
+  }
+  .filtros div {
+    display: none !important;
+    visibility: hidden;
+  }
+  .tarjeta p {
+    font-style: italic;
+    font-size: xx-large;
+    padding: 0px 0px 0px 0px;
+    font-weight: bold;
+    text-shadow: black;
+  }
+  .malla_productos {
+    margin: 0 0 0 0;
+  }
+  .contacto__botones {
+    display: flex;
+    justify-content: center;
+  }
+  .contacto__botones button {
+    margin-right: 5%;
+  }
+  .contacto {
+    background-image: url("/assets/backgrouond/juegos/xbox.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .info {
+    display: flex;
+    text-align: center;
+  }
+  .info button {
+    margin-right: 5%;
+  }
+}
+/************ TABLETS Y CELULARES GRANDES*************************/
+@media (max-width: 767px) and (min-width: 577PX) {
+  .menu__texto {
+    font-size: 3vw;
+    text-align: center;
+    border-bottom: solid gainsboro 1px;
+    padding-top: 5px;
+  }
+  .menu__borde {
+    border-bottom: solid gainsboro 3px;
+  }
+  nav {
+    border-top: solid white 5px;
+    border-bottom: solid white 5px;
+    border-left: 0ch !important;
+    border-right: 0ch !important;
+    margin: 0 0;
+  }
+  .topPage {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .topPage__button {
+    display: flex;
+    justify-content: center;
+  }
+  .brand {
+    display: flex;
+    justify-content: center;
+  }
+  .sm-blanco {
+    color: white;
+  }
+  .search {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    justify-items: center !important;
+    align-items: center;
+    width: 95vw;
+  }
+  .col-form-label {
+    color: #000;
+    font-size: 13px;
+  }
+  .btn1, .form-control, .custom-select {
+    height: 45px;
+  }
+  .custom-select:active, .custom-select:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #000;
+  }
+  .contact-wrap {
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+  .contact-wrap .col-form-label {
+    font-size: 14px;
+    color: black;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    padding: 0;
+  }
+  .contact-wrap .form, .contact-wrap .contact-info {
+    padding: 40px;
+  }
+  .contact-wrap .contact-info {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .contact-wrap .contact-info ul li {
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .contact-wrap .contact-info ul li .wrap-icon {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 5px;
+  }
+  .contact-wrap .form {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .contact-wrap .form h3 {
+    color: #35477d;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .contact-wrap .contact-info {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+  .contact-wrap .contact-info h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  label.error {
+    font-size: 12px;
+    color: red;
+  }
+  #message {
+    resize: vertical;
+  }
+  #form-message-warning, #form-message-success {
+    display: none;
+  }
+  #form-message-warning {
+    color: #B90B0B;
+  }
+  #form-message-success {
+    color: #55A44E;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .submitting {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000;
+  }
+  .z2 {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    opacity: 50%;
+    width: 100vw;
+    height: 15vh;
+  }
+  .z1 {
+    position: relative;
+    z-index: 2;
+  }
+  #logo {
+    width: 7vw;
+    padding-top: 1%;
+  }
+  #heroGames {
+    width: 50vw;
+    padding-top: 1%;
+  }
+  .otrosLinks {
+    display: none;
+  }
+  .otrosLinks__lista {
+    display: none;
+  }
+  .otrosLinks__elemento {
+    display: none;
+  }
+  .novedades {
+    display: flex;
+    background-color: #004280;
+    justify-content: center;
+  }
+  .anterior {
+    display: none;
+  }
+  .siguiente {
+    display: none;
+  }
+  .novedades__producto {
+    width: 100vw;
+    border-radius: 0%;
+  }
+  section.container {
+    margin: 0 0 0 0 !important;
+    border: 0 0 0 0 !important;
+    max-width: 100vw;
+    justify-content: space-evenly;
+  }
+  div.container {
+    margin: 0 0 0 0 !important;
+    border: 0 0 0 0 !important;
+    max-width: 100vw;
+    justify-content: space-evenly;
+  }
+  .destacados {
+    padding: 1% 0 2% 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  }
+  .destacados__titulo {
+    font-style: italic;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #004280;
+  }
+  .destacados__producto {
+    height: 200px;
+  }
+  .videojuegos {
+    background-image: url("/assets/backgrouond/juegos/xbox.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .tcg {
+    background-image: url("/assets/backgrouond/white_and_black_halftone_background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .producto__marcas {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: space-around;
+  }
+  .producto__logo {
+    width: 100vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .tarjeta__producto p {
+    font-style: italic;
+    font-size: xx-large;
+    padding: 0px 0px 0px 0px;
+    font-weight: bold;
+    text-shadow: black;
+  }
+  .banner2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/assets/backgrouond/juegos/play.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    display: grid;
+    align-content: center;
+    text-align: center;
+  }
+  .banner2 h1 {
+    font-size: 40px;
+  }
+  footer {
+    transition: all 150ms;
+    width: 100%;
+    color: white;
+    padding: 20px 20px;
+    background-color: #004280;
+    font-style: italic;
+    text-transform: uppercase;
+    bottom: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  footer img {
+    padding: 0 1%;
+    height: 5vh;
+    margin-top: 50%;
+  }
+  footer img:hover {
+    border: solid #fff;
+    border-radius: 90px;
+  }
+  footer .btn {
+    width: 50VW !important;
+  }
+  footer .btn:hover {
+    color: #004280;
+  }
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+  }
+  .filtros {
+    display: none;
+    visibility: hidden;
+  }
+  .filtros * {
+    display: none !important;
+    visibility: hidden;
+  }
+  .filtros div {
+    display: none !important;
+    visibility: hidden;
+  }
+  .tarjeta p {
+    font-style: italic;
+    font-size: xx-large;
+    padding: 0px 0px 0px 0px;
+    font-weight: bold;
+    text-shadow: black;
+  }
+  .malla_productos {
+    margin: 0 0 0 0;
+  }
+  .contacto__botones {
+    display: flex;
+    justify-content: center;
+  }
+  .contacto__botones button {
+    margin-right: 5%;
+  }
+  .contacto {
+    background-image: url("/assets/backgrouond/juegos/xbox.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .info {
+    display: flex;
+    text-align: center;
+  }
+  .info button {
+    margin-right: 5%;
+  }
+}
+/************ CELULARES PEQUEÑOS  *************************/
+@media (max-width: 576px) {
+  .menu__texto {
+    font-size: 3vw;
+    text-align: center;
+    border-bottom: solid gainsboro 1px;
+    padding-top: 5px;
+  }
+  .menu__borde {
+    border-bottom: solid gainsboro 3px;
+  }
+  nav {
+    border-top: solid white 5px;
+    border-bottom: solid white 5px;
+    border-left: 0ch !important;
+    border-right: 0ch !important;
+    margin: 0 0;
+  }
+  .topPage {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .topPage__button {
+    display: flex;
+    justify-content: center;
+  }
+  .brand {
+    display: flex;
+    justify-content: center;
+  }
+  .sm-blanco {
+    color: white;
+  }
+  .search {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    justify-items: center !important;
+    align-items: center;
+    width: 95vw;
+  }
+  .col-form-label {
+    color: #000;
+    font-size: 13px;
+  }
+  .btn1, .form-control, .custom-select {
+    height: 45px;
+  }
+  .custom-select:active, .custom-select:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #000;
+  }
+  .contact-wrap {
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+  .contact-wrap .col-form-label {
+    font-size: 14px;
+    color: black;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    padding: 0;
+  }
+  .contact-wrap .form, .contact-wrap .contact-info {
+    padding: 40px;
+  }
+  .contact-wrap .contact-info {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .contact-wrap .contact-info ul li {
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .contact-wrap .contact-info ul li .wrap-icon {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 5px;
+  }
+  .contact-wrap .form {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .contact-wrap .form h3 {
+    color: #35477d;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .contact-wrap .contact-info {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+  .contact-wrap .contact-info h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  label.error {
+    font-size: 12px;
+    color: red;
+  }
+  #message {
+    resize: vertical;
+  }
+  #form-message-warning, #form-message-success {
+    display: none;
+  }
+  #form-message-warning {
+    color: #B90B0B;
+  }
+  #form-message-success {
+    color: #55A44E;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .submitting {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000;
+  }
+  .z2 {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    opacity: 50%;
+    width: 100vw;
+    height: 15vh;
+  }
+  .z1 {
+    position: relative;
+    z-index: 2;
+  }
+  #logo {
+    width: 7vw;
+    padding-top: 1%;
+  }
+  #heroGames {
+    width: 50vw;
+    padding-top: 1%;
+  }
+  .otrosLinks {
+    display: none;
+  }
+  .otrosLinks__lista {
+    display: none;
+  }
+  .otrosLinks__elemento {
+    display: none;
+  }
+  .novedades {
+    display: flex;
+    background-color: #004280;
+    justify-content: center;
+  }
+  .anterior {
+    display: none;
+  }
+  .siguiente {
+    display: none;
+  }
+  .novedades__producto {
+    width: 100vw;
+    border-radius: 0%;
+  }
+  section.container {
+    margin: 0 0 0 0 !important;
+    border: 0 0 0 0 !important;
+    max-width: 100vw;
+    justify-content: space-evenly;
+  }
+  div.container {
+    margin: 0 0 0 0 !important;
+    border: 0 0 0 0 !important;
+    max-width: 100vw;
+    justify-content: space-evenly;
+  }
+  .destacados {
+    padding: 1% 0 2% 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  }
+  .destacados__titulo {
+    font-style: italic;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #004280;
+  }
+  .destacados__producto {
+    height: 200px;
+  }
+  .videojuegos {
+    background-image: url("/assets/backgrouond/juegos/xbox.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .tcg {
+    background-image: url("/assets/backgrouond/white_and_black_halftone_background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .producto__marcas {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: space-around;
+  }
+  .producto__logo {
+    width: 100vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .tarjeta__producto p {
+    font-style: italic;
+    font-size: xx-large;
+    padding: 0px 0px 0px 0px;
+    font-weight: bold;
+    text-shadow: black;
+  }
+  .banner2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/assets/backgrouond/juegos/play.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    display: grid;
+    align-content: center;
+    text-align: center;
+  }
+  .banner2 h1 {
+    font-size: 40px;
+  }
+  footer {
+    transition: all 150ms;
+    width: 100%;
+    color: white;
+    padding: 20px 20px;
+    background-color: #004280;
+    font-style: italic;
+    text-transform: uppercase;
+    bottom: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  footer img {
+    padding: 0 1%;
+    height: 5vh;
+    margin-top: 50%;
+  }
+  footer img:hover {
+    border: solid #fff;
+    border-radius: 90px;
+  }
+  footer .btn {
+    width: 50VW !important;
+  }
+  footer .btn:hover {
+    color: #004280;
+  }
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+  }
+  .filtros {
+    display: none;
+    visibility: hidden;
+  }
+  .filtros * {
+    display: none !important;
+    visibility: hidden;
+  }
+  .filtros div {
+    display: none !important;
+    visibility: hidden;
+  }
+  .tarjeta p {
+    font-style: italic;
+    font-size: xx-large;
+    padding: 0px 0px 0px 0px;
+    font-weight: bold;
+    text-shadow: black;
+  }
+  .malla_productos {
+    margin: 0 0 0 0;
+  }
+  .contacto__botones {
+    display: flex;
+    justify-content: center;
+  }
+  .contacto__botones button {
+    margin-right: 5%;
+  }
+  .contacto {
+    background-image: url("/assets/backgrouond/juegos/xbox.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .info {
+    display: flex;
+    text-align: center;
+  }
+  .info button {
+    margin-right: 5%;
+  }
+}/*# sourceMappingURL=estilos.css.map */

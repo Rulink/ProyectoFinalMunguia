@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¡Esta es nuestra sección de cómics y mangas!">
+    <meta name="keywords" content="Yugioh, Yu-Gi-Oh, Pokemon, Marvel, DC, Spider-Man, Naruto, Dragon Ball Z, Anime, Manga, One Piece, Zelda, Superman, Batman, Boku no Hero, My hero academia, Kimetsu no Yaiba, Demons Slayer, Death Note, Ironman">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css">
+    <!--icono marca-->
+    <link rel="shortcut icon" href="/assets/icons/heroGamesLogo.png">
+    <!--Hoja de Estilos de manera externa-->
+    <link rel="stylesheet" href="/css/estilos.css"/>
+    <!--Nombre de la pestaña-->
+    <title>Hero Games -  Comics y Manga</title>
+</head>
+<body>
+        <!--Mi barra de navegación-->
+        <header>
+            <nav class="navbar navbar-expand-lg fondo">
+                <div class="topPage">
+                    <div class="topPage__Up">
+                        <section class="brand">
+                            <a class="navbar-brand" href="/index.html"><img src="/assets/icons/heroGamesLogo.png" alt="logo"
+                                    id="logo" />
+                            </a>
+                            <a class="navbar-brand" href="/index.html"><img id="heroGames" src="/assets/icons/heroGames.png"
+                                    alt="Hero Games">
+                            </a>
+                        </section>
+                        <section class="search">
+                            <form class="d-flex search" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Ingresa un artículo"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-light" type="submit">Search</button>
+                            </form>
+                        </section>
+                        <section class="topPage__button">
+                            <button class="navbar-toggler invertir" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </section>
+                    </div>
+                    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                        <ul class="navbar-nav seccion">
+                            <a class="nav-link active nav__element " aria-current="page" href="/pages/videojuegos.html">
+                                <li class="nav-item texto sm-blanco menu__texto">Videojuegos</li>
+                            </a>
+                            <a class="nav-link active nav__element" aria-current="page" href="/pages/juegosDeMesa.html">
+                                <li class="nav-item texto sm-blanco menu__texto">Juegos de Mesa</li>
+                            </a>
+                            <a class="nav-link active nav__element" aria-current="page" href="/pages/tcg.html">
+                                <li class="nav-item texto sm-blanco menu__texto">TCG</li>
+                            </a>
+                            <a class="nav-link active nav__element" aria-current="page" href="/pages/comicsYManga.html">
+                                <li class="nav-item texto sm-blanco menu__texto">Comics y Manga</li>
+                            </a>
+                            <a class="nav-link active nav__element" aria-current="page" href="/pages/coleccionables.html">
+                                <li class="nav-item texto sm-blanco menu__texto">Coleccionables</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+    <main>
+        <section class="container-fluid row malla_productos">
+            <div class="filtros col-2">
+                <h4>Filtros</h4>
+                <div>
+                    <h5>Tipo</h5>
+                    <input type="checkbox" id="amiibo" value="amiibo"><label for="amiibo">Amiibo</label></input><br>
+                    <input type="checkbox" id="funko" value="funko"><label for="funko">Funko</label></input><br>
+                    <input type="checkbox" id="figma" value="figma"><label for="figma"></label>Figma</input>
+                </div>
+                <div>
+                    <h5>Saga</h5>
+                    <input type="checkbox" id="pokemon" value="pokemon"><label for="pokemon">Pokemon</label></input><br>
+                    <input type="checkbox" id="zelda" value="zelda"><label for="zelda">Zelda</label></input><br>
+                    <input type="checkbox" id="metroid" value="metroid"><label for="metroid">Metroid</label></input><br>
+                    <input type="checkbox" id="anime" value="anime"><label for="anime">Anime</label></input><br>
+                    <input type="checkbox" id="marvel" value="marvel"><label for="marvel">Marvel</label></input><br>
+                    <input type="checkbox" id="smash" value="smash"><label for="smash">Smash</label></input><br>
+                    <input type="checkbox" id="dragonQuest" value="dragonQuest"><label for="dragonQuest">Dragon Quest</label></input><br>
+                    <input type="checkbox" id="marioBros" value="marioBros"><label for="marioBros">Mario Bros.</label></input>
+                </div>
+                <button type="button" class="btn btn-outline-primary">Aplicar</button>
+            </div>
+            <div class="container col">
+                <h2 class="text-center subtitulo">Comics y Manga</h2>
+                <div class="row">
+                    <div class="tarjeta text-center col-xs-12 col-sm-12 col-lg-6">
+                        <img src="/assets/img/mangasComics/bokuNoHero1.jpg" alt="bokuNoHero1">
+                        <h3 class="tarjeta_producto">My Hero academia 1</h3>
+                        <p>$99.00</p>
+                    </div>
+                    <div class="tarjeta text-center col-xs-12 col-sm-12 col-lg-6">
+                        <img src="/assets/img/mangasComics/demonSlayer1.jpg" alt="demonSlayer1">
+                        <h3 class="tarjeta_producto">Demon Slayer 1</h3>
+                        <p>$149.00</p>
+                    </div>
+                    <div class="tarjeta text-center col-xs-12 col-sm-12 col-lg-6">
+                        <img src="/assets/img/mangasComics/demonSlayer3.jpg" alt="demonSlayer3">
+                        <h3 class="tarjeta_producto">Demon Slayer 3</h3>
+                        <p>$149.00</p>
+                    </div>
+                    <div class="tarjeta text-center col-xs-12 col-sm-12 col-lg-6">
+                        <img src="/assets/img/mangasComics/demonSlayer8.jpg" alt="demonSlayer8">
+                        <h3 class="tarjeta_producto">Demon Slayer 8</h3>
+                        <p>$149.00</p>
+                    </div>
+                </div>
+                <div class="row row2">
+                    <div class="tarjeta text-center col-xs-12 col-sm-12 col-lg-6">
+                        <img src="/assets/img/mangasComics/demonSlayer9.jpg" alt="demonSlayer9">
+                        <h3 class="tarjeta_producto">Demon Slayer 9</h3>
+                        <p>$149.00</p>
+                    </div>
+                    <div class="tarjeta text-center col-xs-12 col-sm-12 col-lg-6">
+                        <img src="/assets/img/mangasComics/demonSlayer10.jpg" alt="demonSlayer10">
+                        <h3 class="tarjeta_producto">Demon Slayer 10</h3>
+                        <p>$149.00</p>
+                    </div>
+                    <div class="tarjeta text-center col-xs-12 col-sm-12 col-lg-6">
+                        <img src="/assets/img/mangasComics/demonSlayer18.jpg" alt="demonSlayer18">
+                        <h3 class="tarjeta_producto">Demon Slayer 18</h3>
+                        <p>$149.00</p>
+                    </div>
+                    <div class="tarjeta text-center col-xs-12 col-sm-12 col-lg-6">
+                        <img src="/assets/img/mangasComics/naruto42.jpg" alt="naruto42">
+                        <h3 class="tarjeta_producto">Naruto Tomo 42</h3>
+                        <p>$149.00</p>
+                    </div>
+                </div>
+                <div class="row row3">
+                    <div class="tarjeta text-center col-xs-12 col-sm-12 col-lg-6">
+                        <img src="/assets/img/mangasComics/manga/boxDBZ1.jpg" alt="boxDBZ1">
+                        <h3 class="tarjeta_producto">Dragon Ball Z: Boxset #1</h3>
+                        <p>$1,499.00</p>
+                    </div>
+                    <div class="tarjeta text-center col-xs-12 col-sm-12 col-lg-6">
+                        <img src="/assets/img/mangasComics/manga/boxDBZ2.jpg" alt="boxDBZ2">
+                        <h3 class="tarjeta_producto">Dragon Ball Z: Boxset #2</h3>
+                        <p>$1,499.00</p>
+                    </div>
+                    <div class="tarjeta text-center col-xs-12 col-sm-12 col-lg-6">
+                        <img src="/assets/img/mangasComics/manga/boxsetNaruto.jpg" alt="boxsetNaruto">
+                        <h3 class="tarjeta_producto">Naruto: Boxset #2</h3>
+                        <p>$1,499.00</p>
+                    </div>
+                    <div class="tarjeta text-center col-xs-12 col-sm-12 col-lg-6">
+                        <img src="/assets/img/mangasComics/manga/boxsetOnePiece1.jpg" alt="boxsetOnePiece1">
+                        <h3 class="tarjeta_producto">One Piece: Boxset #1</h3>
+                        <p>$1,499.00</p>
+                    </div>
+                </div>
+                <div class="row row4">
+                    <div class="tarjeta text-center col-xs-12 col-sm-12 col-lg-6">
+                        <img src="/assets/img/mangasComics/pokemon_emerald3.jpg" alt="pokemon_emerald3">
+                        <h3 class="tarjeta_producto">Pokemon Emerald 3</h3>
+                        <p>$149.00</p>
+                    </div>
+                    <div class="tarjeta text-center col-xs-12 col-sm-12 col-lg-6">
+                        <img src="/assets/img/mangasComics/pokemon_goldSilver1.jpg" alt="pokemon_goldSilver1">
+                        <h3 class="tarjeta_producto">Pokemon Gold y silver 1</h3>
+                        <p>$149.00</p>
+                    </div>
+                    <div class="tarjeta text-center col-xs-12 col-sm-12 col-lg-6">
+                        <img src="/assets/img/mangasComics/zelda_MajorasMask.jpg" alt="zelda Lemillion">
+                        <h3 class="tarjeta_producto">Zelda: Majoras Mask</h3>
+                        <p>$599.00</p>
+                    </div>
+                    <div class="tarjeta text-center col-xs-12 col-sm-12 col-lg-6">
+                        <img src="/assets/img/mangasComics/onePiece_blueDeep.jpg" alt="onePiece_blueDeep">
+                        <h3 class="tarjeta_producto">One Piece: Blue Deep</h3>
+                        <p>$199.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <section class="row">
+                <p class="col text-center">Desarrollado por Raul Munguia</p>
+                    <a href="/pages/contacto.html" target="" class="text-center">
+                        <section class="col btn btn-outline-light">Contacto</section>
+                    </a>
+            </section>
+            <!--Redes sociales-->
+            
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/gaming/HeroGamesShop" target="_blank">
+                    <img src="/assets/icons/redes/fb.png" alt="Facebook" />
+                </a>
+                <a href="https://www.instagram.com/rulink10/" target="_blank">
+                    <img src="/assets/icons/redes/IG.png" alt="Instagram" />
+                </a>
+                <a href="https://twitter.com/Rulink10" target="_blank">
+                    <img src="/assets/icons/redes/TW.png" alt="Twitter" />
+                </a>
+                <a href="https://www.youtube.com/channel/UCFnCqUS76YrJ9YNVRemCbWw" target="_blank">
+                    <img src="/assets//icons/redes/yt.png" alt="YouTube" />
+                </a>
+                <a href="https://www.twitch.tv/rulink10" target="_blank">
+                    <img src="/assets/icons/redes/TTV.png" alt="Twitch" />
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="Es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--SEO-->
+    <meta name="description" content="La tienda online de videojuegos, juegos de mesa, tcg, y coleccionables">
+    <meta name="keywords"
+        content="Xbox, Nintendo, PLaystation, Nintendo Switch, Xbox Series X, Playstation 5, Xbox Series S, Xbox One, Xbox Game Pass, Playstation 4, Yugioh Cards, Yugioh, Yu-Gi-Oh, Yu-Gi-Oh trading card game, amiibo zelda, amiibo switch, amiibo mario, amiibo smash bros, funko, funko pop, funko pop marvel, funko pop stranger things, Sony, Pokemon game, ?okemon cards, Pokemon Trading card game, Magic the gathering, Magic the gathering cards, Magic the gathering packs">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css">
+    <!--icono marca-->
+    <link rel="shortcut icon" href="/assets/icons/heroGamesLogo.png">
+    <!--Hoja de Estilos de manera externa-->
+    <link rel="stylesheet" href="/css/estilos.css" />
+    <!--Nombre de la pestaña-->
+    <title>Hero Games - Home</title>
+</head>
+
+<body>
+    <!--Mi barra de navegación-->
+
+    <header>
+        <nav class="navbar navbar-expand-lg fondo">
+            <div class="topPage">
+                <div class="topPage__Up">
+                    <section class="brand">
+                        <a class="navbar-brand" href="#"><img src="/assets/icons/heroGamesLogo.png" alt="logo"
+                                id="logo" />
+                        </a>
+                        <a class="navbar-brand" href="#"><img id="heroGames" src="/assets/icons/heroGames.png"
+                                alt="Hero Games">
+                        </a>
+                    </section>
+                    <section class="search">
+                        <form class="d-flex search" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Ingresa un artículo"
+                                aria-label="Search">
+                            <button class="btn btn-outline-light">Buscar</button>
+                        </form>
+                    </section>
+                    <section class="topPage__button">
+                        <button class="navbar-toggler invertir" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </section>
+                </div>
+                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                    <ul class="navbar-nav seccion">
+                        <a class="nav-link active nav__element " aria-current="page" href="/pages/videojuegos.html">
+                            <li class="nav-item texto sm-blanco menu__texto">Videojuegos</li>
+                        </a>
+                        <a class="nav-link active nav__element" aria-current="page" href="/pages/juegosDeMesa.html">
+                            <li class="nav-item texto sm-blanco menu__texto">Juegos de Mesa</li>
+                        </a>
+                        <a class="nav-link active nav__element" aria-current="page" href="/pages/tcg.html">
+                            <li class="nav-item texto sm-blanco menu__texto">TCG</li>
+                        </a>
+                        <a class="nav-link active nav__element" aria-current="page" href="/pages/comicsYManga.html">
+                            <li class="nav-item texto sm-blanco menu__texto">Comics y Manga</li>
+                        </a>
+                        <a class="nav-link active nav__element" aria-current="page" href="/pages/coleccionables.html">
+                            <li class="nav-item texto sm-blanco menu__texto">Coleccionables</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!--Carrusel de novedades y preventas -->
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <img src="/assets/backgrouond/black.jpg" alt="" class="z2">
+                <div class="carousel-item active">
+                    <img src="/assets/img/novedades/ns-Splatoon3.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="z1">LANZAMIENTO</h5>
+                        <p class="z1">Ya a la venta</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/novedades/ps5-ragnarok.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="z1">PREVENTA</h5>
+                        <p class="z1">Aparta tu juego por solo $50</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/novedades/ns-MarioRabbids.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="z1">PREVENTA</h5>
+                        <p class="z1">Aparta tu juego por solo $50</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <img src="/assets/icons/flecha-negra.png" alt="anterior"
+                    class="novedades__flecha anterior novedades--izquierda">
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <img src="/assets/icons/flecha-negra.png" alt="siguiente"
+                    class="novedades__flecha siguiente novedades--derecha">
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!--Empieza la sección de artículos más vendidos-->
+
+        <section class="container">
+            <div class="container row destacados">
+                <a href="./pages/videojuegos.html" class="row">
+                    <h3 class="destacados__titulo subtitulo">
+                        Consolas y videojuegos mas vendidos
+                    </h3>
+                </a>
+                <section class="container row">
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto">
+                        <img src="/assets/img/videojuegos/juegos/coverBTOW.jpg" alt="Zelda BTOW"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">Zelda: Breath of The Wild</h5>
+                        <p>$1,199.00</p>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto"><img class="destacados__producto" src="/assets/img/videojuegos/consolas/NSO.jpg"
+                        alt="Nintendo Switch OLED">
+                        <h5 class="tarjeta_producto">Nintendo Switch OLED</h5>
+                        <p>$8,199.00</p>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto"><img src="/assets/img/videojuegos/juegos/MarioStrikers.jpg" alt="MarioStrikers"
+                        class="destacados__producto" />
+                        <h5 class="tarjeta_producto">Mario Strikers Battle League</h5>
+                        <p>$1,199.00</p>
+                    </div>
+                    
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto"><img class="destacados__producto" src="/assets/img/videojuegos/consolas/seriesX.jpg" alt="Series X">
+                    <h5 class="tarjeta_producto">Xbox Series X</h5>
+                    <p>$13,999.00</p>
+                </div><div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto">
+                    <img class="destacados__producto" src="/assets/img/videojuegos/consolas/play5.jpg"
+                        alt="Playstation 5">
+                        <h5 class="tarjeta_producto">Playstation 5</h5>
+                        <p>$15,999.00</p>
+                    </div>
+                </section>
+            </div>
+            <div class="container row destacados">
+                <a href="./pages/tcg.html" class="row">
+                    <h3 class="destacados__titulo subtitulo">
+                        Productos TCG mas vendidos
+                    </h3>
+                </a>
+                <section class="container row">
+                    <div class="col text-center destacados__tarjeta">
+                        <img src="/assets/img/tcg/battleOCH.jpg" alt="Battle of Chaos"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">Yu-Gi-Oh! Battle of Chaos</h5>
+                        <p>$1,499.00</p>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto">
+                        <img src="/assets/img/tcg/structureAlbazStrike.jpg" alt="Yu-Gi-Oh! Structure Deck: Albaz Strike"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">Yu-Gi-Oh! Structure Deck: Albaz Strike</h5>
+                        <p>$299.00</p>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto">
+                        <img src="/assets/img/tcg/pokemon/lucario.jpg" alt="Pokemon: Lucario Vstar"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">Pokemon: Lucario Vstar</h5>
+                        <p>$299.00</p>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto">
+                        <img src="/assets/img/tcg/yugiohLegendaryDuelistsSeason3.png" alt="Yu-Gi-Oh! Legendary Duelist Season 3"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">Yu-Gi-Oh! Legendary Duelist Season 3</h5>
+                        <p>$399.00</p>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto">
+                        <img src="/assets/img/tcg/yugiohMaximumGoldElDorado.png" alt="Yu-Gi-Oh! Maximum Gold: El Dorado"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">Yu-Gi-Oh! Maximum Gold: El Dorado</h5>
+                        <p>$399.00</p>
+                    </div>
+                </section>
+            </div>
+            <div class="container row destacados">
+                <a href="./pages/juegosDeMesa.html" class="row">
+                    <h3 class="destacados__titulo subtitulo">
+                        Juegos de mesa mas vendidos
+                    </h3>
+                </a>
+                <section class="container row">
+                    <div class="col text-center destacados__tarjeta">
+                        <img src="/assets/img/juegosDeMesa/ajedrezMarvel.jpg" alt="Ajedrez Marvel"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">Ajedrez Marvel</h5>
+                        <p>$1,499.00</p>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto">
+                        <img src="/assets/img/juegosDeMesa/catan.jpg" alt="Catan"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">Catan</h5>
+                        <p>$499.00</p>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto">
+                        <img src="/assets/img/juegosDeMesa/dobble.jpg" alt="dobble"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">Dobble</h5>
+                        <p>$299.00</p>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto">
+                        <img src="/assets/img/juegosDeMesa/rummy-o.jpg" alt="rummy-o"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">Rummy-o</h5>
+                        <p>$499.00</p>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto">
+                        <img src="/assets/img/juegosDeMesa/unoFlip.jpg" alt="unoFlip"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">UNO: FLIP</h5>
+                        <p>$399.00</p>
+                    </div>
+                </section>
+            </div>
+            <div class="container row destacados">
+                <a href="./pages/comicsYManga.html" class="row">
+                    <h3 class="destacados__titulo subtitulo">
+                        Comics y Mangas mas vendidos
+                    </h3>
+                </a>
+                <section class="container row">
+                    <div class="col text-center destacados__tarjeta">
+                        <img src="/assets/img/mangasComics/manga/boxDBZ1.jpg" alt="boxDBZ1"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">Dragon Ball Z: Boxset #1</h5>
+                        <p>$1,499.00</p>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto">
+                        <img src="/assets/img/mangasComics/manga/boxDBZ2.jpg" alt="boxDBZ2"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">Dragon Ball Z: Boxset #2</h5>
+                        <p>$1,499.00</p>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto">
+                        <img src="/assets/img/mangasComics/manga/boxsetNaruto.jpg" alt="boxsetNaruto"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">Naruto: Boxset #2</h5>
+                        <p>$1,499.00</p>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto">
+                        <img src="/assets/img/mangasComics/manga/boxsetOnePiece1.jpg" alt="boxsetOnePiece1"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">One Piece: Boxset #1</h5>
+                        <p>$1,499.00</p>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto">
+                        <img src="/assets/img/mangasComics/manga/boxsetSeven.jpg" alt="boxsetSeven"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">Seven Deadly Sins Boxset</h5>
+                        <p>$599.00</p>
+                    </div>
+                </section>
+            </div>
+            <div class="container row destacados">
+                <a href="./pages/coleccionables.html" class="row">
+                    <h3 class="destacados__titulo subtitulo">
+                        Productos coleccionables mas vendidos
+                    </h3>
+                </a>
+                <section class="row">
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto">
+                        <img src="/assets/img/coleccionables/figma_linkTP.jpg" alt="figma_linkTP"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">Figma Link Twillight Princess</h5>
+                        <p>$3,199.00</p>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto">
+                        <img src="/assets/img/coleccionables/amiibo_metroidDread.jpg" alt="amiibo_metroidDread"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">Amiibo Metroid Dread</h5>
+                        <p>$999.00</p>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto">
+                        <img src="/assets/img/coleccionables/funko_charizard.jpg" alt="funko_charizard"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">Funko Charizard</h5>
+                        <p>$399.00</p>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto">
+                        <img src="/assets/img/coleccionables/amiibo_ivysaur.jpg" alt="amiibo_ivysaur"
+                            class="destacados__producto" />
+                        <h5 class="tarjeta_producto">Amiibo Ivysaur</h5>
+                        <p>$599.00</p>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-12 col-lg tarjeta__producto">
+                        <img src="/assets/img/coleccionables/figma_zeldaTP.jpg" alt="figma_zeldaTP"
+                            class="destacados__producto" />
+                        <h5 class="">Figma Zelda Twillight Princess</h5>
+                        <p>$3,199.00</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <section class="row">
+                <p class="col text-center">Desarrollado por Raul Munguia</p>
+                    <a href="/pages/contacto.html" target="" class="text-center">
+                        <section class="col btn btn-outline-light">Contacto</section>
+                    </a>
+            </section>
+            <!--Redes sociales-->
+            
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/gaming/HeroGamesShop" target="_blank">
+                    <img src="/assets/icons/redes/fb.png" alt="Facebook" />
+                </a>
+                <a href="https://www.instagram.com/rulink10/" target="_blank">
+                    <img src="/assets/icons/redes/IG.png" alt="Instagram" />
+                </a>
+                <a href="https://twitter.com/Rulink10" target="_blank">
+                    <img src="/assets/icons/redes/TW.png" alt="Twitter" />
+                </a>
+                <a href="https://www.youtube.com/channel/UCFnCqUS76YrJ9YNVRemCbWw" target="_blank">
+                    <img src="/assets//icons/redes/yt.png" alt="YouTube" />
+                </a>
+                <a href="https://www.twitch.tv/rulink10" target="_blank">
+                    <img src="/assets/icons/redes/TTV.png" alt="Twitch" />
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
