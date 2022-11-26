@@ -98,6 +98,9 @@ a {
   .search button {
     align-self: center;
   }
+  .botonCompra {
+    margin-bottom: 5%;
+  }
   #carouselExampleCaptions {
     background-color: #004280;
     display: flex;
