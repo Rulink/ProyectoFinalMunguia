@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Nintendo Switch OLED",
+    "price": 9999.00,
+    "category": "Videogames",
+    "type": "Console",
+    "brand": "Nintendo",
+    "image": "Proyecto Final/ProyectoFinalMunguia/assets/img/videojuegos/consolas/NSO.jpg",
+    "stock": 10
+  },
+  {
+    "id": 2,
+    "title": "Xbox Series X",
+    "price": 14999.00,
+    "category": "Videogames",
+    "type": "Console",
+    "brand": "Microsoft",
+    "image": "Proyecto Final/ProyectoFinalMunguia/assets/img/videojuegos/consolas/seriesX.jpg",
+    "stock": 6
+  },
+  {
+    "id": 3,
+    "title": "Playstation 5",
+    "price": 15999.00,
+    "category": "Videogames",
+    "type": "Console",
+    "brand": "Sony",
+    "image": "Proyecto Final/ProyectoFinalMunguia/assets/img/videojuegos/consolas/play5.jpg",
+    "stock": 1
+  },
+  {
+    "id": 4,
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "price": 1499.00,
+    "category": "Videogames",
+    "type": "Game",
+    "brand": "Nintendo",
+    "image": "Proyecto Final/ProyectoFinalMunguia/assets/img/videojuegos/juegos/coverBTOW.jpg",
+    "stock": 50
+  },
+  {
+    "id": 5,
+    "title": "Mario Strikers: Batle League",
+    "price": 1299.00,
+    "category": "Videogames",
+    "type": "Game",
+    "brand": "Nintendo",
+    "image": "Proyecto Final/ProyectoFinalMunguia/assets/img/videojuegos/juegos/MarioStrikers.jpg",
+    "stock": 100
+  },
+  {
+    "id": 6,
+    "title": "Yu-Gi-Oh! TCG: Battle of Chaos Booster Display",
+    "price": 1799.00,
+    "category": "TCG",
+    "type": "Display",
+    "brand": "Yu-Gi-Oh!",
+    "image": "Proyecto Final/ProyectoFinalMunguia/assets/img/tcg/battleOCH.jpg",
+    "stock": 2
+  },
+  {
+    "id": 7,
+    "title": "Yu-Gi-Oh! Structure Deck: Albaz Strike",
+    "price": 299.00,
+    "category": "TCG",
+    "type": "Structure Deck",
+    "brand": "Yu-Gi-Oh!",
+    "image": "Proyecto Final/ProyectoFinalMunguia/assets/img/tcg/structureAlbazStrike.jpg",
+    "stock": 7
+  },
+  {
+    "id": 8,
+    "title": "Yu-Gi-Oh! Legendary Duelist Season 3 Booster Box, Multicolor",
+    "price": 349.00,
+    "category": "TCG",
+    "type": "Booster Box",
+    "brand": "Yu-Gi-Oh!",
+    "image": "Proyecto Final/ProyectoFinalMunguia/assets/img/tcg/yugiohLegendaryDuelistsSeason3.jpg",
+    "stock": 16
+  },
+  {
+    "id": 9,
+    "title": "Yu-Gi-Oh! TCG: Maximum Gold - El Dorado",
+    "price": 349.00,
+    "category": "TCG",
+    "type": "Booster Box",
+    "brand": "Yu-Gi-Oh!",
+    "image": "Proyecto Final/ProyectoFinalMunguia/assets/img/tcg/yugiohMaximumGoldElDorado.jpg",
+    "stock": 4
+  },
+  {
+    "id": 10,
+    "title": "Pokemon Lucario Vstar Premium Collection Box - 6 Booster Packs",
+    "price": 1099.00,
+    "category": "TCG",
+    "type": "Collection Box",
+    "brand": "Pokemon",
+    "image": "Proyecto Final/ProyectoFinalMunguia/assets/img/tcg/yugiohMaximumGoldElDorado.jpg",
+    "stock": 6
+  },
+  {
+    "id": 11,
+    "title": "Pokemon Lucario Vstar Premium Collection Box - 6 Booster Packs",
+    "price": 1099.00,
+    "category": "TCG",
+    "type": "Collection Box",
+    "brand": "Pokemon",
+    "image": "Proyecto Final/ProyectoFinalMunguia/assets/img/tcg/pokemon/lucario.jpg",
+    "stock": 6
+  },
+  {
+    "id": 12,
+    "title": "Pokemon Lucario Vstar Premium Collection Box - 6 Booster Packs",
+    "price": 1099.00,
+    "category": "TCG",
+    "type": "Collection Box",
+    "brand": "Pokemon",
+    "image": "Proyecto Final/ProyectoFinalMunguia/assets/img/tcg/pokemon/lucario.jpg",
+    "stock": 6
+  }
+]

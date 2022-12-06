@@ -71,6 +71,16 @@ a {
     text-shadow: black;
 }
 
+.botonCompra{
+    margin-bottom: 5%;
+}
+
+.carrito{
+    img{max-width: 5vw;}
+}
+
+
+
 /****************** COMPUTADORAS Y LAPTOPS GRANDES********************/
 
 @media (min-width:1280px) {
@@ -125,10 +135,6 @@ a {
         button{
             align-self: center;
         }
-    }
-
-    .botonCompra{
-        margin-bottom: 5%;
     }
 
     #carouselExampleCaptions{

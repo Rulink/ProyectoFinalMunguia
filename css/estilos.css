@@ -51,6 +51,14 @@ a {
   color: #004280;
 }
 
+.botonCompra {
+  margin-bottom: 5%;
+}
+
+.carrito img {
+  max-width: 5vw;
+}
+
 /****************** COMPUTADORAS Y LAPTOPS GRANDES********************/
 @media (min-width: 1280px) {
   header {
@@ -97,9 +105,6 @@ a {
   }
   .search button {
     align-self: center;
-  }
-  .botonCompra {
-    margin-bottom: 5%;
   }
   #carouselExampleCaptions {
     background-color: #004280;
